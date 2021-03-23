@@ -2,14 +2,21 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static(__dirname + '/pages'));
 app.use(express.static(__dirname + '/styles'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/pages/index.html'))
 });
 
-app.get('/projects', (req, res) => {
+app.get('/work', (req, res) => {
+    res.send('World!')
+});
+
+app.get('/resume', (req, res) => {
+    res.send('World!')
+});
+
+app.get('/about', (req, res) => {
     res.send('World!')
 });
 

@@ -1,5 +1,40 @@
+body {
+    margin: 0
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 60ch 1fr;
+}
+
+nav > * {
+    grid-column: 2 / auto;
+}
+.spacing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
 .red {
-    height: 100px;
-    width: 100px;
     background-color: red;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.spacing > p {
+    color: black;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    padding: 16px 16px;
+    border-radius: 16px;
+    border: none;
 }
