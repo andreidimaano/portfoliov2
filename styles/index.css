@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-size: 24px;
     overflow-y: scroll;
-    background-color: #f0efeb;
+    background-color: #fef9ef;
 }
 
 body::-webkit-scrollbar {
@@ -26,14 +26,17 @@ body {
     margin: 0;
 }
 
-.navbar > a {
+a {
     text-decoration: none;
-    color: black;
+    color: #303030;
+}
+
+a:hover {
+    color: #000000;
 }
 
 .content {
     margin-top: 50px;
-    position: relative;
     display: grid;
     grid-template-columns: 1fr minmax(200px, 800px ) 1fr;
     gap: 80px;
@@ -42,11 +45,7 @@ body {
 .content > * {
     grid-column: 2 / span 1 ;
     margin-bottom: 16px;
-}
-
-.calcifer {
     height: 500px;
-    background-image: url(../images/original.jpg), linear-gradient(#343434, black);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -54,13 +53,30 @@ body {
     justify-content: center;
     font-size: 64px;
     color: white;
-    transition: background-image 2s ease;
-    border-radius: 3%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.calcifer {
+    background-image: url(../images/calciferbacon.gif);
 }
 
 .calcifer:hover {
-    transition: background-image 2s ease;
-    background-image: url(../images/calciferbacon.gif);
+    background-image: url(../images/calcifer.gif);
+}
+
+.drumline {
+    background-image: url(../images/IMG_1559.JPG)
+}
+
+.drumline:hover {
+    background-image: url(https://media.giphy.com/media/F7HGLpsQ9kRTDOYvyn/giphy.gif)
+}
+.archive {
+    background-image: url(../images/book.jpg);
+}
+
+.archive:hover {
+    background-image: url(https://media.giphy.com/media/jyanYxvGz3MOc/giphy.gif);
 }
 
 .drumline {
@@ -74,4 +90,16 @@ body {
 .footer {
     margin-top: 50px;
     height: 100px;
+    display: grid;
+    grid-template-columns: 4fr repeat(2, 1fr) 4fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.linkedin {
+    grid-column: 2 / span 1;
+}
+
+.intro > p {
+    font-size: 20px;
 }
