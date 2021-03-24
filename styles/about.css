@@ -1,14 +1,16 @@
 .intro > p {
-    font-size: 20px;
-}
-
-.about {
-    display: grid;
-    grid-template-columns: 1fr min(60ch, 100% - 64px) 1fr;
-    gap: 32px;
-    margin-top: 50px;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--gray);
 }
 
 .about > * {
     grid-column: 2 / span 1 ;
+}
+
+.image-wrapper > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }

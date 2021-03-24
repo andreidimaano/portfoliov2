@@ -1,43 +1,27 @@
 :root {
     --pink: #E692AB;
     --blue: #4FBDD6;
+    --gray: #606060;
 }
+
 body {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
     overflow-y: scroll;
     background-color: #fef9ef;
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.navbar-wrapper {
+.grid {
     display: grid;
-    grid-template-columns: 1fr minmax(200px, 800px ) 1fr;
+    grid-template-columns: 1fr minmax(350px, 800px ) 1fr;
     gap: 80px;
-}
-
-.logo {
-    font-style: italic;
-    flex-grow: 1;
-}
-
-.logo > a {
-    color: var(--pink);
-    font-size: 24px;
-}
-
-.logo > a::after {
-    content: 'dimaano';
-    color: var(--blue);
 }
 
 .navbar {
@@ -51,20 +35,29 @@ body {
     margin-right: 12px;
 }
 
-a {
-    text-decoration: none;
-    color: #303030;
+.logo {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    flex-grow: 1;
 }
 
-a:hover {
-    color: #000000;
+.logo > a {
+    color: var(--pink);
+    font-size: 24px;
+}
+
+.logo > a::after {
+    content: 'dimaano';
+    color: var(--blue);
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
 }
 
 .content {
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr minmax(200px, 800px ) 1fr;
-    gap: 80px;
 }
 
 .content > * {
@@ -72,6 +65,7 @@ a:hover {
     margin-bottom: 16px;
     background-size: cover;
     background-position: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .calcifer, .drumline, .archive {
@@ -110,13 +104,15 @@ a:hover {
 .footer {
     margin-top: 50px;
     height: 100px;
-    display: grid;
-    gap: 12px;
-    grid-template-columns: 4fr repeat(2, 1fr) 4fr;
-    justify-items: center;
     align-items: center;
 }
 
-.linkedin {
+.footer-content {
     grid-column: 2 / span 1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content > * {
+    margin: 0 10px;
 }
