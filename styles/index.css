@@ -1,40 +1,61 @@
 body {
-    margin: 0
+    margin: 0;
+    font-size: 24px;
+    overflow-y: scroll;
+    background-color: #f0efeb;
 }
-nav {
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.navbar {
+    padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 60ch 1fr;
+    grid-template-columns: 8fr 1fr 1fr;
+    align-items: center;
 }
 
-nav > * {
-    grid-column: 2 / auto;
-}
-.spacing {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
+.navbar > * {
+    margin: 0;
 }
 
-.red {
-    background-color: red;
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-.spacing > p {
+.navbar > a {
+    text-decoration: none;
     color: black;
-    text-decoration: none;
-    margin-right: 24px;
 }
 
-a {
-    text-decoration: none;
+.content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    gap: 80px;
 }
 
-button {
-    color: white;
-    padding: 16px 16px;
-    border-radius: 16px;
-    border: none;
+.content > * {
+    grid-column: 2 / span 1 ;
+    margin-bottom: 16px;
+}
+
+.calcifer {
+    height: 500px;
+}
+
+.drumline {
+    height: 500px;
+}
+
+.archive {
+    height: 500px;
+}
+
+.footer {
+    margin-top: 50px;
+    height: 100px;
 }
