@@ -1,3 +1,7 @@
+:root {
+    --pink: #E692AB;
+    --blue: #4FBDD6;
+}
 body {
     margin: 0;
     font-size: 24px;
@@ -15,15 +19,36 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-.navbar {
-    padding: 20px;
+.navbar-wrapper {
     display: grid;
-    grid-template-columns: 8fr 1fr 1fr;
+    grid-template-columns: 1fr minmax(200px, 800px ) 1fr;
+    gap: 80px;
+}
+
+.logo {
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.logo > a {
+    color: var(--pink);
+    font-size: 24px;
+}
+
+.logo > a::after {
+    content: 'dimaano';
+    color: var(--blue);
+}
+
+.navbar {
+    grid-column: 2 / span 1;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .navbar > * {
-    margin: 0;
+    margin-right: 12px;
 }
 
 a {
@@ -45,15 +70,17 @@ a:hover {
 .content > * {
     grid-column: 2 / span 1 ;
     margin-bottom: 16px;
-    height: 500px;
     background-size: cover;
     background-position: center;
+}
+
+.calcifer, .drumline, .archive {
+    height: 500px;
+    font-size: 64px;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 64px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .calcifer {
@@ -71,6 +98,7 @@ a:hover {
 .drumline:hover {
     background-image: url(https://media.giphy.com/media/F7HGLpsQ9kRTDOYvyn/giphy.gif)
 }
+
 .archive {
     background-image: url(../images/book.jpg);
 }
@@ -79,18 +107,11 @@ a:hover {
     background-image: url(https://media.giphy.com/media/jyanYxvGz3MOc/giphy.gif);
 }
 
-.drumline {
-    height: 500px;
-}
-
-.archive {
-    height: 500px;
-}
-
 .footer {
     margin-top: 50px;
     height: 100px;
     display: grid;
+    gap: 12px;
     grid-template-columns: 4fr repeat(2, 1fr) 4fr;
     justify-items: center;
     align-items: center;
@@ -98,8 +119,4 @@ a:hover {
 
 .linkedin {
     grid-column: 2 / span 1;
-}
-
-.intro > p {
-    font-size: 20px;
 }
