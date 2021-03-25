@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
 
 .logo > a {
     color: var(--pink);
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .logo > a::after {

@@ -1,3 +1,70 @@
 .work > * {
     grid-column: 2 / span 1 ;
 }
+
+.works {
+    background-color: white;
+}
+
+.works > * {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8%;
+}
+
+.project-label {
+    grid-column: 2 / span 2;
+}
+
+.project {
+    grid-column: 2 /span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 11%;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.project > .title {
+    grid-column: 1 / span 2;
+}
+
+.hide {
+    display: none;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.project:hover > .title::after {
+    content: ' (read more)';
+}
+
+@media (max-width: 600px) {
+    .works > * {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .project {
+        grid-template-columns: 100%;
+    }
+
+    .project > .title {
+        grid-column: 1 / span 1;
+    }
+
+    .labels {
+        display: none;
+    }
+
+    .project {
+        grid-column: 1;
+    }
+
+    .year {
+        margin-bottom: 16px;
+        border-bottom: 1px solid #121212;
+    }
+}

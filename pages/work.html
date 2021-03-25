@@ -19,10 +19,42 @@
             </nav>
         </div>
         <div class="work grid">
-            <div class="intro">
-                <p>Hi, I'm Andrei Dimaano. Thanks for wanting to get to know about me!
-                    Here are my current passions/interests:
-                </p>
+            <div class="header">
+                <div class="title">Archive</div>
+                <div class="subtitle">All of my Coding Projects</div>
+            </div>
+            <div class="works">
+                <div class="labels">
+                    <p class="year">Year</p>
+                    <p class="project-label">Project</p>
+                    <p class="client">Client</p>
+                </div>
+                <div class="section">
+                    <div class="year">1</div>
+                    <div onclick="accordion('project1')" class="project">
+                        <div class="title">2</div>
+                        <div class="client">4</div>
+                        <div id="project1" class="description hide">description</div>
+                    </div>
+                    <div onclick="accordion('project2')" class="project">
+                        <div class="title">2</div>
+                        <div class="client">4</div>
+                        <div id="project2" class="description hide">description</div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="year">1</div>
+                    <div onclick="accordion('project3')" class="project">
+                        <div class="title">2</div>
+                        <div class="client">4</div>
+                        <div id="project3" class="description hide">description</div>
+                    </div>
+                    <div onclick="accordion('project4')" class="project">
+                        <div class="title">2</div>
+                        <div class="client">4</div>
+                        <div id="project4" class="description hide">description</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer grid">
@@ -32,6 +64,6 @@
                 <a href="https://github.com/andreidimaano">GitHub</a>
             </div>
         </div>
-        <script src="move.js"></script>
+        <script src="accordion.js"></script>
     </body>
 </html>
