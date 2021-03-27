@@ -54,3 +54,17 @@
     border-radius: 50%;
     background-image: url(../images/mario.jpg);
 }
+
+ul {
+    padding: 20px;
+}
+
+.about-description > ul > li > a {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.IU {
+    color: var(--pink);
+    font-size: 30px;
+}

@@ -71,12 +71,14 @@ a {
 .calcifer, .drumline, .archive {
     height: 500px;
     font-size: 64px;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.content > * > * {
+    color: white;
+}
 .calcifer {
     background-image: url(../images/calciferbacon.gif);
 }
