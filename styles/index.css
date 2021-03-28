@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 .grid {
     display: grid;
     grid-template-columns: 1fr minmax(350px, 800px ) 1fr;
-    gap: 80px;
+    gap: 80px 32px;
 }
 
 .navbar {
@@ -66,6 +66,7 @@ a {
     background-size: cover;
     background-position: center;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
 .calcifer, .drumline, .archive {
@@ -76,9 +77,6 @@ a {
     justify-content: center;
 }
 
-.content > * > * {
-    color: white;
-}
 .calcifer {
     background-image: url(../images/calciferbacon.gif);
 }
