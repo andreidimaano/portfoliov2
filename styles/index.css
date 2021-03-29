@@ -53,6 +53,9 @@ body::-webkit-scrollbar {
 
 a {
     text-decoration: none;
+}
+
+.footer-content > a, .navbar > a {
     color: var(--gray);
 }
 

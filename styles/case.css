@@ -41,4 +41,14 @@
 .li-bold {
     font-weight: 500;
     margin-right: 10px;
+    color: black;
+}
+
+.case-background > * > a {
+    color: var(--blue);
+}
+
+.case-info > a:hover {
+    text-decoration: none;
+    color: var(--blue);
 }
