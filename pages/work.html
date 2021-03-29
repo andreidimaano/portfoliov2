@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <title>Andrei Dimaano</title>
     </head>
-    <body>
+    <body onload="fillWorks()">
         <div class="navbar-wrapper grid">
             <nav class="navbar">
                 <p class="logo" >
@@ -29,150 +29,6 @@
                     <p class="project-label">Project</p>
                     <p class="client-label">Client</p>
                 </div>
-                <div class="section">
-                    <div class="year">2021</div>
-                    <div onclick="accordion('project1')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Intersection</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Logic Design Class Project</div>
-                        <div id="project1" class="description hide">
-                            <p>Implementation and Design of a stoplight intersection using Verilog.</p>
-                            <div class="links">
-                                <a>Link</a>
-                                <a>GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div onclick="accordion('project2')" class="project">
-                        <div class="title-tags">
-                            <div class="title">IU Chrome Extension</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Side Project</div>
-                        <div id="project2" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project3')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Bobaful</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Bobaful</div>
-                        <div id="project3" class="description hide">description</div>
-                    </div>
-                </div>
-                <div class="section">
-                    <div class="year">2020</div>
-                    <div onclick="accordion('project4')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Bluedit</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Side Project</div>
-                        <div id="project4" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project5')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Calcifer</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Mayuko Inoue</div>
-                        <div id="project5" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project6')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Isabelle</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Software Design Class Project</div>
-                        <div id="project6" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project7')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Portfolio v1</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Side Project</div>
-                        <div id="project7" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project8')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Rodelo</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">My Dad :)</div>
-                        <div id="project8" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project9')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Trieuloo Twitter Tracker</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Trieuloo, Silly Hacks</div>
-                        <div id="project9" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project10')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Simon Says</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Side Project</div>
-                        <div id="project10" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project11')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Twiine</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Twiine</div>
-                        <div id="project11" class="description hide">description</div>
-                    </div>
-                    <div onclick="accordion('project12')" class="project">
-                        <div class="title-tags">
-                            <div class="title">Dragon Fist Fitness</div>
-                            <div class="tags">
-                                <p>Verilog</p>
-                                <p>HLSM</p>
-                            </div>
-                        </div>
-                        <div class="client">Side Project</div>
-                        <div id="project12" class="description hide">description</div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="footer grid">
@@ -183,5 +39,6 @@
             </div>
         </div>
         <script src="accordion.js"></script>
+        <script src="work.js"></script>
     </body>
 </html>

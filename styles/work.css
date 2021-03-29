@@ -33,7 +33,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 40px;
-    cursor: pointer;
 }
 
 .project > .title-tags, .description {
@@ -58,7 +57,11 @@
     border-top: 1px solid #121212;
 }
 
-.project:hover > .title-tags > .title::after {
+.title-tags {
+    cursor: pointer;
+}
+
+.title-tags:hover > .title::after {
     content: ' (read more)';
     color: #adb5bd;
     font-size: 16px;
@@ -99,6 +102,15 @@
 
 .links {
     margin-top: 4px;
+}
+
+.links > a:nth-child(1) {
+    color: var(--pink);
+    margin-right: 4px;
+}
+
+.links> a:nth-child(2) {
+    color: var(--blue);
 }
 
 @media (max-width: 600px) {
