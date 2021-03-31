@@ -44,11 +44,14 @@
     color: black;
 }
 
-.case-background > * > a {
+.case-info > a:hover {
+    text-decoration: none;
     color: var(--blue);
 }
 
-.case-info > a:hover {
-    text-decoration: none;
+.case-background > * > a{
+    color: var(--blue);
+}
+.iteration > * > a  {
     color: var(--blue);
 }
