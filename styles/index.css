@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr minmax(350px, 800px ) 1fr;
+    grid-template-columns: 1fr minmax(200px, 800px ) 1fr;
     gap: 80px 32px;
 }
 
@@ -97,10 +97,6 @@ a {
 }
 
 .archive {
-    background-image: url(../images/book.jpg);
-}
-
-.archive:hover {
     background-image: url(https://media.giphy.com/media/jyanYxvGz3MOc/giphy.gif);
 }
 
@@ -117,5 +113,5 @@ a {
 }
 
 .footer-content > * {
-    margin: 0 10px;
+    margin-right: 10px;
 }
