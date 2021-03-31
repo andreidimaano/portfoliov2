@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/case.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
         <title>Andrei Dimaano</title>
     </head>
-    <body>
+    <body onload="fillCaseStudy('calcifer')">
         <div class="navbar-wrapper grid">
             <nav class="navbar">
                 <p class="logo" >
@@ -18,9 +19,8 @@
                 <a href="about.html">About</a>
             </nav>
         </div>
-        <div class="content grid">
-            <a class="calcifer" href="calcifer.html">calcifer</a>
-            <a class="archive" href="work.html">archive</a>
+        <div class="case-study">
+            <img class="case-img" src="images/calcifer.gif" />
         </div>
         <div class="footer grid">
             <div class="footer-content">
@@ -29,5 +29,6 @@
                 <a href="https://github.com/andreidimaano">GitHub</a>
             </div>
         </div>
+        <script src="scripts/casestudy.js"></script>
     </body>
 </html>
