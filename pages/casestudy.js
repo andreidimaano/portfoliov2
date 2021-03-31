@@ -41,7 +41,7 @@ let projectMap = new Map([
                 <a href="https://www.forestapp.cc/">Forest</a> is a productivity app where users are locked out of there phone while a timer is running.
                 One of the features I really liked about Forest is the idea that the hours I put into studying grows trees on the app, and after a week of
                 studying, I could see a multitude of trees (Hence the name, Forest) illustrating my progress in productivity. I wanted to create a database
-                so that users could see how much they are studying - I also wanted to quantify my results on Resumes ¯\_(ツ)_/¯ .`,
+                so that users could see how much they are studying - I also wanted to quantify my results on Resume ¯\\_(ツ)_/¯ .`,
                 `When I first tried to create a database, I used Firebase. I was familiar with Firebase because I of my mobile dev experience. However,
                 everytime I tried to push the bot into production, my bot would break. I had almost given up on a database until my mentor recommended 
                 MongoDB. Since they are both managed databases, I had no issue converting my Firebase code into MongoDB code. To this day, many of my users
