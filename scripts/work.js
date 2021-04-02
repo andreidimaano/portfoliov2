@@ -61,7 +61,7 @@ let sections = new Map([
             client: 'Side Project',
             description: `I created my first portfolio based on a design made by Brittany Chiang. I originally created this portfolio 
             for my Riot Games Internship application.`,
-            link: 'http://andreidimaano.com/',
+            link: 'https://andreidimaano.github.io/portfoliov1/',
             github: 'https://github.com/andreidimaano/portfoliov1'
         },
         {
