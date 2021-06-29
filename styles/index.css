@@ -70,11 +70,11 @@ a {
     grid-gap: 48px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
     align-items: center;
-    margin-top: 48px;
+    /* margin-top: 12px; */
 }
 
 .home-intro > img {
-    width: 80%;
+    width: 120%;
     object-fit: fill;
     justify-self: center;
 }
@@ -89,7 +89,6 @@ a {
 
 .home-intro-cta {
     border-radius: 50px;
-    width: 60%;
     box-shadow: 0 0 8px rgb(0 0 0 / 4%);
     background-color: var(--blue);
     padding: 16px;
