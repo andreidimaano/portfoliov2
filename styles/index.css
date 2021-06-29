@@ -9,14 +9,14 @@ body {
     font-size: 20px;
     overflow-y: scroll;
     background-color: #fef9ef;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .grid {
     display: grid;
@@ -51,6 +51,12 @@ body::-webkit-scrollbar {
     color: var(--blue);
 }
 
+h1 {
+    font-weight: 700;
+    font-family: 'Manrope', 'sans-serif';
+    color: black;
+}
+
 a {
     text-decoration: none;
 }
@@ -59,16 +65,46 @@ a {
     color: var(--gray);
 }
 
-.content {
-    margin-top: 50px;
+.home-intro {
+    display: grid;
+    grid-gap: 48px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    align-items: center;
+    margin-top: 48px;
 }
+
+.home-intro > img {
+    width: 80%;
+    object-fit: fill;
+    justify-self: center;
+}
+
+.home-intro-text > p {
+    color: var(--gray);
+}
+
+.home-intro-text > h1 {
+    margin: 0;
+}
+
+.home-intro-cta {
+    border-radius: 50px;
+    width: 60%;
+    box-shadow: 0 0 8px rgb(0 0 0 / 4%);
+    background-color: var(--blue);
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
 
 .content > * {
     grid-column: 2 / span 1 ;
     margin-bottom: 16px;
     background-size: cover;
     background-position: center;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     color: white;
 }
 

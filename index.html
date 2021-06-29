@@ -14,6 +14,10 @@
 
         <link rel="stylesheet" href="styles/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
         <title>Andrei Dimaano</title>
     </head>
     <body>
@@ -27,7 +31,16 @@
             </nav>
         </div>
         <div class="content grid">
-            <a class="calcifer" href="calcifer.html">calcifer</a>
+            <div class="home-intro">
+                <div class="home-intro-text">
+                    <h1>Hey Friends - </h1>
+                    <p>I'm Andrei, an aspiring software engineer who loves listening to IU songs and drinking Oreo milkshakes.</p>
+                    <p>An engineer during the day and aspiring 3PT specialist at night, I find joy in perfect my crafts.</p>
+                    <div onclick="ctaScroll()" class="home-intro-cta">browse portfolio</div>
+                </div>
+                <img src="images/IMG_7519.jpeg" />
+            </div>
+            <a id="project1" class="calcifer" href="calcifer.html">calcifer</a>
             <a class="archive" href="work.html">archive</a>
         </div>
         <div class="footer grid">
@@ -37,5 +50,6 @@
                 <a href="https://github.com/andreidimaano">GitHub</a>
             </div>
         </div>
+        <script src="scripts/cta.js"></script>
     </body>
 </html>

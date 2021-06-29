@@ -1,8 +1,33 @@
-.intro > p {
-    font-size: 28px;
-    font-family: 'Roboto', sans-serif;
+.about-intro-text > * > p {
+    font-size: 20px;
     font-weight: 500;
     color: var(--gray);
+}
+
+.about-intro-text > * > * > a {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.about-intro-text > .ait-1 > h2 {
+    font-family: 'Manrope', 'serif-sans';
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.about-intro-text > .ait-2 > h3 {
+    font-family: 'Manrope', 'serif-sans';
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.about-h2-subtitle {
+    margin-top: 2px;
+    font-size: 24px;
+}
+
+.highlight-name {
+    color: var(--blue);
 }
 
 .about > * {
