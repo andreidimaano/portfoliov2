@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 1fr minmax(350px, 1000px ) 1fr;
     gap: 20px;
+    color: black;
 }
 
 .works > * {

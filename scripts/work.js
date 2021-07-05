@@ -1,6 +1,29 @@
 let sections = new Map([
     ['2021', [
         {
+            title: 'BTS Facial Recognition',
+            tags: ['Computer Vision', 'AI', 'Python'],
+            client: 'Side Project',
+            description: `An AI tries to identify the members of BTS in their music video, Dynamite.`,
+            link: 'https://youtu.be/iXqRY_Q_oc4',
+            github: 'https://github.com/andreidimaano/BTSFacialRecognition'
+        },
+        {
+            title: 'Google Docs Clone',
+            tags: ['socket', 'React', 'mongoDB'],
+            client: 'Side Project',
+            description: `I used sockets in order to create a real-time text editor. I persist data using
+            mongoDB.`,
+            github: 'https://github.com/andreidimaano/GoogleDocsClone'
+        },
+        {
+            title: 'YMCA Pose Detector',
+            tags: ['Computer Vision','ml5'],
+            client: 'Side Project',
+            description: `I used posenet to identify whether my arm shape is a 'Y', 'M', 'C', or 'A'.`,
+            github: 'https://github.com/andreidimaano/ml5'
+        },
+        {
             title: 'Intersection',
             tags: ['Verilog', 'FSM', 'HLSM'],
             client: 'Logic Design Class Project',

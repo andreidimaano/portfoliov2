@@ -12,6 +12,11 @@ body {
     font-family: 'DM Sans', sans-serif;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    color: var(--gray);
+}
+
+h1, h2, h3 {
+    color: black;
 }
 
 /* body::-webkit-scrollbar {
@@ -129,16 +134,43 @@ a {
     background-color: var(--blue);
 }
 
-.calcifer, .drumline, .archive {
+.calcifer, .drumline, .archive, .bts {
     height: 500px;
-    font-size: 64px;
+    font-size: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    word-wrap: break-word;
+}
+
+.project-description {
+    padding: 16px;
+    background-color: white;
+}
+
+.project-description > p {
+    color: var(--gray);
+}
+
+.bts {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://media.giphy.com/media/egY5YoS7dY0G47qsFx/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .calcifer {
-    background-image: url(../images/calciferbacon.gif);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/calciferbacon.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bts:hover {
+    background-image: url('https://media.giphy.com/media/egY5YoS7dY0G47qsFx/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .calcifer:hover {

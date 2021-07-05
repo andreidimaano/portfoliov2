@@ -1,7 +1,7 @@
 .case-study {
     display: grid;
     grid-template-columns: 1fr min(60ch, 100% - 64px) 1fr;
-    gap: 0px 80px;
+    gap: 0px 32px;
 }
 
 .case-study > * {
@@ -9,7 +9,6 @@
     margin-bottom: 16px;
     background-size: cover;
     background-position: center;
-    line-height: 1.4em;
 }
 
 .case-quote {
@@ -28,9 +27,8 @@
     margin-bottom: 40px;
 }
 
-.case-info > * {
-    display: flex;
-    align-items: center;
+.case-info > * > h3 {
+    margin-bottom: 8px;
 }
 
 .case-info > * > p{
@@ -42,6 +40,11 @@
     font-weight: 700;
 }
 
+.prototype-link{
+    color: black;
+    text-decoration: underline;
+}
+
 .li-bold {
     font-weight: 700;
     margin-right: 10px;
@@ -49,8 +52,12 @@
 }
 
 .case-info > a:hover {
-    text-decoration: none;
     color: var(--blue);
+}
+
+.case-study-video {
+    display: flex;
+    justify-content: center;
 }
 
 .case-background > * > a{
