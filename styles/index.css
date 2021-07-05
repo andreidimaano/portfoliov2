@@ -166,6 +166,10 @@ a {
     background-position: center;
 }
 
+.project {
+    text-align: center;
+}
+
 .bts:hover {
     background-image: url('https://media.giphy.com/media/egY5YoS7dY0G47qsFx/giphy.gif');
     background-repeat: no-repeat;
