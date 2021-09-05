@@ -90,11 +90,11 @@ let projectMap = new Map([
             link: "https://youtu.be/iXqRY_Q_oc4",
             background: [`In 2020 and 2021, I revisited my love for Korean culture. I began watching Kdramas and listening to Kpop.
             I wanted to create a project that combined my interests in KPOP and Computer Science. The result was a Google Chrome Extension 
-            that turns every string that adds a rainbow color to strings that contain "IU". When I posted the project on Github, I started looking
+            that changes the font color of strings that contain "IU" to a cascading rainbow color. When I posted the project on Github, I started looking
             at other Kpop Computer Science projects. I stumbled across 2 projects: 1. A guy trains an AI to compare the similarities of his dancing skills to Kpop dancers
             and 2. A guy trains an AI to recognize the members of a Kpop group in a music video. `,
-            `Both projects sounded cool to me. However, I can't dance very well so I decided to recreate the 2nd project. My friends also always tell me, 
-            they can't differentiate the members of BTS in music videos. Since my sister is a huge BTS fan, I decided to create a project that recognizes the faces of BTS members.`,
+            `Both projects sounded cool to me. However, I can't dance very well so I decided to recreate the 2nd project, and my friends also always tell me
+            they can never differentiate the members of BTS in music videos. Futhermore, my sister is a huge BTS fan so I decided to create a project that recognizes the faces of BTS members.`,
             ],
             iteration: [
                 {
