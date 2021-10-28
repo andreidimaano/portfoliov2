@@ -1,6 +1,21 @@
 let sections = new Map([
     ['2021', [
         {
+            title: 'WINC website',
+            tags: ['React', 'Gastby', 'Highlight'],
+            client: 'WINC',
+            description: `Official Website for Women in Computing(WINC).`,
+            link: 'https://winc.cs.ucr.edu/',
+            github: 'https://github.com/winc-ucr/wincucr-website-v2'
+        },
+        {
+            title: 'Kruskl',
+            tags: ['React', 'GraphQL', 'MongoDB'],
+            client: 'Side Project',
+            description: `Forum Website for CS Classes`,
+            github: 'https://github.com/andreidimaano/Kruskl'
+        },
+        {
             title: 'BTS Facial Recognition',
             tags: ['Computer Vision', 'AI', 'Python'],
             client: 'Side Project',

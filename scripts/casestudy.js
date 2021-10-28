@@ -15,11 +15,10 @@ let projectMap = new Map([
             technologies: "TypeScript",
             link: "https://github.com/andreidimaano/Calcifer",
             background: [`Like many, I experienced the roughest year of life in 2020. I went through personal 
-            hardships and at many times felt lost. However, 2020 still had many highs! Around March 2020, I discovered
+            hardships and at many times felt lost. Around March 2020, I discovered
             <a target="blank" href="https://www.youtube.com/channel/UCEDkO7wshcDZ7UZo17rPkzQ">Mayuko Inoue</a>, a content creator on YouTube who talks about
-            tech, career, and life. After 2 weeks, I happened to find her on Twitch.tv. For the past year, I've been pretty active on her
-            Twitch and Discord community where we have built a community of international coworkers. `,
-            `in October 2020, Mayuko and her husband, Scott hosted a coding event called <a target="blank" href="https://codewithfriends.io/">Code With Friends</a>.
+            tech, career, and life. Meeting Mayuko was the highlight of 2020 and gave me the confidence to pursue SWE.`,
+            `In October 2020, Mayuko and Scott, hosted a coding event called <a target="blank" href="https://codewithfriends.io/">Code With Friends</a>.
             I participated in the event and created a <a target="blank" href="https://github.com/andreidimaano/rodelo">bot</a> in honor of my dad who had passed way due to Covid-19.
             During a random stream, twitch chat wanted a way to cowork with the same people when Mayuko was not streaming. I made a couple changes and created version 1
             of Calcifer.`,
@@ -30,12 +29,9 @@ let projectMap = new Map([
             iteration: [
                 {
                     title: "Version 1: Laying the Groundwork",
-                    description: [`Version 1 of Calcifer was very minimal. There was only one function avaliable: start a Pomodoro Timer. Users
-                    were able to type a command into Discord c: pomodoro 15. The bot would start a 15 minute timer then
-                    alert you when the timer was finished. The bot was not complicated to make, and there were almost no bugs because the code
-                    was so simple. However, there was only one bug that recurs up until today. Because I host my bot on Heroku, the bot will 
-                    randomly restart and all timers will be wiped out. Sadly, this is something that I could not control due to Heroku's settings. 
-                    So, at the time, I would occasionally get messages from my users that my bot was bugging out.`]
+                    description: [`Version 1 of Calcifer was very minimal. Users could start a Pomodoro Timer by typing 'c: pomodoro 15'. The bot would start a 15 minute timer then
+                    alert you when the timer was finished. There was only one bug that occurs today. Because I host my bot on Heroku, the bot will 
+                    randomly restart and all timers will be wiped out. Sadly, this is something that I could not control due to Heroku's settings.`]
                 }, 
                 {
                     title: "Version 2: Database",
