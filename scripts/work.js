@@ -1,6 +1,13 @@
 let sections = new Map([
     ['2021', [
         {
+            title: 'Pokédex and Pokémon battle Discord Bot',
+            tags: ['DiscordJS', 'Python', 'Flask', 'Rest API'],
+            client: 'Cutie Hack',
+            description: `Discord Bot that generates images of Pokémon battles.`,
+            github: 'https://github.com/andreidimaano/DiscordPokedexPokemonBattleBot',
+        },
+        {
             title: 'WINC website',
             tags: ['React', 'Gastby', 'Highlight'],
             client: 'WINC',
