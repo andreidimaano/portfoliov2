@@ -45,10 +45,29 @@
     text-decoration: underline;
 }
 
+.case-info > p {
+    font-size: 1rem;
+}
+
 .li-bold {
-    font-weight: 700;
-    margin-right: 10px;
+    font-weight: 500;
     color: black;
+    font-size: 1rem;
+}
+
+.case-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.case-info > * {
+    display: flex;
+    align-items: center;
+}
+
+.case-info > a {
+    text-decoration: underline;
+    text-decoration-color: var(--ltgray);
 }
 
 .case-info > a:hover {

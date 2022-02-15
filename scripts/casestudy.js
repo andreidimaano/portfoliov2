@@ -162,10 +162,14 @@ let fillCaseStudy = (project) => {
         <div class="case-desc">
             <p>${(info.desc) ? info.desc : ''}</p>
             <div class="case-info">
-                <a class="prototype-link" target="_blank" href="${info.link}">SEE RESULT ➡️</a> 
-                <div><h3 class="li-bold">Role </h3><p>${(info.role) ? info.role : ''}</p></div>
-                <div><h3 class="li-bold">Duration </h3><p>${(info.duration) ? info.duration: ''}</p></div>
-                <div><h3 class="li-bold">Technologies </h3><p>${(info.technologies) ? info.technologies : ''}</p></div>
+                <p>⚙️ Role</p>
+                <p class="li-bold">${(info.role) ? info.role : ''}</p>
+                <p>⌛ Duration </p>
+                <p class="li-bold">${(info.duration) ? info.duration: ''}</p>
+                <p>🕹️ Tech Stack </p>
+                <p class="li-bold">${(info.technologies) ? info.technologies : ''}</p>
+                <p>🔗 See Result</p>
+                <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/iXqRY_Q_oc4" class="li-bold">https://youtu.be/iXqRY_Q_oc4</a>
             </div>
         </div>
         <div class="case-background">
