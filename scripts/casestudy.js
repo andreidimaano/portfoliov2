@@ -169,7 +169,7 @@ let fillCaseStudy = (project) => {
                 <p>🕹️ Tech Stack </p>
                 <p class="li-bold">${(info.technologies) ? info.technologies : ''}</p>
                 <p>🔗 See Result</p>
-                <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/iXqRY_Q_oc4" class="li-bold">https://youtu.be/iXqRY_Q_oc4</a>
+                <a target="_blank" rel="noopener noreferrer" href=${(info.technologies) ? info.technologies : ''} class="li-bold">${(info.link) ? info.link : ''}</a>
             </div>
         </div>
         <div class="case-background">

@@ -1,16 +1,18 @@
 :root {
     --pink: #E692AB;
     --blue: #4FBDD6;
-    --gray: #606060;
+    --gray: #495057;
     --ltgray: #c0c0c0;
+    --black: #212529;
+    --white: #f8f9fa;
 }
 
 body {
     margin: 0;
     font-size: 20px;
     overflow-y: scroll;
-    background-color: #fef9ef;
-    font-family: 'DM Sans', sans-serif;
+    background-color: var(--white);
+    font-family: 'Arial', 'DM Sans', sans-serif;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     color: var(--gray);
@@ -38,7 +40,7 @@ h1, h2, h3 {
 }
 
 .navbar > * {
-    margin-right: 12px;
+    margin-right: 24px;
 }
 
 .logo {
@@ -48,13 +50,13 @@ h1, h2, h3 {
 }
 
 .logo > a {
-    color: var(--pink);
-    font-size: 28px;
+    color: var(--black);
+    font-size: 20px;
 }
 
 .logo > a::after {
-    content: 'dimaano';
-    color: var(--blue);
+    content: ' Dimaano';
+    color: var(--black);
 }
 
 h1 {
@@ -69,6 +71,8 @@ a {
 
 .footer-content > a, .navbar > a {
     color: var(--gray);
+    font-size: 16px;
+    text-decoration: underline;
 }
 
 .home-intro {
