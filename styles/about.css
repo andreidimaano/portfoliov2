@@ -188,7 +188,7 @@
 .thankyou {
     display: flex;
     justify-content: center;
-    margin: 10rem 3rem 0 0;
+    margin: 3rem 3rem 0 0;
 }
 .scream {
     grid-column: 2 / span 5;
