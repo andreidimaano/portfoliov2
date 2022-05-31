@@ -1,8 +1,42 @@
+.profile {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.about-intro-text {
+    /* width: 80%; */
+}
+
+.sop {
+    margin: 3rem 0;
+}
+
+.sop > h1{
+ font-family: 'Arial', sans-serif;
+ font-weight: 400;
+ margin-bottom: 0.25rem;
+ margin-top: 0;
+ font-size: 3rem;
+}
+
+.empower {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .about-intro-text > * > p {
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 500;
     color: var(--gray);
 }
+
 
 .about-intro-text > * > * > a {
     color: var(--blue);
@@ -10,15 +44,26 @@
 }
 
 .about-intro-text > .ait-1 > h2 {
-    font-family: 'Manrope', 'serif-sans';
-    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Manrope', 'serif-sans';
+    font-weight: 600; */
     margin-bottom: 0px;
 }
 
-.about-intro-text > .ait-2 > h3 {
-    font-family: 'Manrope', 'serif-sans';
-    font-weight: 600;
+
+.about-intro-text > .ait-2 > h3, .about-intro-text > .ait-3 > h3 {
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Manrope', 'serif-sans';
+    font-weight: 600; */
     margin-bottom: 0px;
+}
+
+.ait-3 > h3 {
+    text-align: center;
+}
+
+.expand {
+    font-size: 1.5rem;
 }
 
 .about-h2-subtitle {
@@ -42,20 +87,113 @@
     justify-self: center;
 }
 
+.secondaryPhoto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.aboutimgs::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;   
+}
+
+.thirdPhoto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.fourthPhoto {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    justify-self: center;
+    margin-bottom: 3rem;
+}
+
+.code-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/code.jpg);
+}
+
+.nike-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/nike.jpg);
+    grid-column: 2;
+}
+
+.subtext {
+    font-size: 0.8rem;
+    vertical-align: top;
+}
+
+.iu-img {
+    grid-column: 2;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/iu.jpg);
+}
+
+.bar-img::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.bar-img-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bar-img-text {
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+
+.less-margin {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+.right-align {
+    text-align: end;
+}
+
+.bar-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/bar.jpg);
+}
+
 .about-img:after {
     content: '';
     display: block;
     padding-bottom: 100%;
 }
 
+
 .about-img > div {
     background-size: cover;
     background-position: center;
 }
+
+.thankyou {
+    display: flex;
+    justify-content: center;
+    margin: 10rem 3rem 0 0;
+}
 .scream {
     grid-column: 2 / span 5;
     grid-row: 3 / span 5;
-    background-image: url(../images/scream.png);
+    background-image: url(../images/onion.jpg);
     border-radius: 50%;
 }
 
@@ -63,21 +201,21 @@
     grid-column: 8 / span 8;
     grid-row: 2 / span 8;
     border-radius: 50%;
-    background-image: url(../images/bee.jpg);
+    background-image: url(../images/surprise.jpg);
 }
 
 .office {
     grid-column: 2 / span 7;
     grid-row: 9 / span 7;
-    border-radius: 50%;
-    background-image: url(../images/office.png);
+    border-radius: 60%;
+    background-image: url(../images/ddp.jpeg);
 }
 
 .mario {
     grid-column: 11 / span 5;
     grid-row: 11 / span 5;
     border-radius: 50%;
-    background-image: url(../images/mario.jpg);
+    background-image: url(../images/toy.jpeg);
 }
 
 ul {

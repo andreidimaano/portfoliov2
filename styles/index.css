@@ -45,7 +45,7 @@ h1, h2, h3 {
 
 .logo {
     font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
     flex-grow: 1;
 }
 
