@@ -124,6 +124,59 @@ let projectMap = new Map([
             }
         }
     ],
+    ['pokemon',
+        {
+            header: "Discord Bot — Pokedex Pokemon Battle ",
+            desc: 'This Discord bot was made for a Hackathon workshop. It teaches people to use REST APIs and build REST APIs.',
+            role: "Software Developer",
+            duration: "Nov 2021, 7 days",
+            technologies: "DiscordJS, Python, Flask, REST API",
+            link: "https://github.com/andreidimaano/DiscordPokedexPokemonBattleBot",
+            background: [`The 2021 Cutie Hack team invited me to make a workshop for Discord bots. I wanted to make it simple while teaching many useful things that they can use in future projects. I think the most useful concept for a beginner is using and building a REST API. The theme of the hackathon was "Better Together". I think people learn best when there is a story, so I went with Pokemon. The quote that inspired me was Team Rockets's quote "Ready for trouble, make it double." I also really liked pokemon at the time and I knew the pokemon API existed, so I decided on this project for my workshop.`,
+            ],
+            iteration: [
+                {
+                    title: "Creating a Pokedex using the Pokedex API",
+                    description: [`The Pokédex (ポケモン 図鑑 ずかん , Pokemon Zukan, Illustrated Pokémon Encyclopedia) is an electronic device created and designed to catalog and provide information regarding the various species of Pokémon featured in the Pokémon video game, anime and manga series.
+                    <div style="display:flex; justify-content:flex-end; margin-bottom:1rem"><iframe src="https://giphy.com/embed/ZZT3Wag0jrTD3dpIfe" width="480" height="416" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                    Recreating this is really simple. You need a way to display the interface, in this case, we used Discord Bots. Then you need the information from somewhere. That's where the Pokedex REST API comes in. We make a GET request to to the REST API to get information of a pokemon and we use that information to display it on Discord.`]
+                }, 
+                {
+                    title: "Building a REST API",
+                    description: [`I always wanted to know how to make apps that use different languages. I never understood how to connect python code with javascript code as a beginner coder. Later, I found that I need to make a REST API to connect the two languages. I wanted to teach this to the workshop audience as well. I created a pokemon battle generator using the Pokedex API. I also used Pillow in order to edit images. <div style="display:flex; justify-content: flex-end; margin-bottom: 1rem;"><img src="./images/battlebg1.png"/></div> To generate a pokemon battle, you need the background .png, pokemon .png, and the health percentages. I pasted the pokemon .pngs on top of the background .png using Pillow (python package). I got the pokemon images using the Pokedex API. i got the background image from Google. Then, I used Pillow to draw health bars on top of the image. This required a lot of math and percentages to get the health bars to display correctly. I learned how to create a REST API with Flask, so that I could send data using HTTP. This data would be used as input values for the python image generator. This is the end result: <div style="display:flex; justify-content: center; margin-top: 1rem;"><img src="./images/newim.png"/></div>`
+                    ]
+                }
+            ],
+            conclusion: {
+                title: "Conclusion",
+                description: `This was a great experience teaching and creating a workshop. This was also my first time creating a REST API. The hackathon directors said my workshop was really useful and many of the hackers enjoyed my workshop.`
+            }
+        }
+    ],
+    ['bluedit',
+    {
+        header: "Bluedit",
+        desc: 'Bluedit is a Fullstack React GraphQL project. Users can create, read, update, delete, and upvote posts.',
+        role: "Software Developer",
+        duration: "Dec 2020, 7 days",
+        technologies: "React, GraphQL",
+        link: "https://github.com/andreidimaano/Bluedit",
+        background: [`I used to be an avid reddit user. I made a simplified reddit clone. This project helped me understand full stack engineering.`,
+        ],
+        iteration: [
+            {
+                title: "Thoughts on Bluedit",
+                description: [`During a time when I had zero offers from any companies, Dec 2020 was a terrible time for me. All I wanted was to get at least one offer to jumpstart my career. I unhealthily grinded everyday during my winter break. I made zero time for rest and zero time for friends. It was a rough time. I chased an arbitrary number: 1000 github contributions before the year ends. I ended up building bad codding habits like spamming git commits to fix silly errors. I ended up making something great, a website with a nice, simple UI. A platform for users to create accounts and upload their thoughts. All of this was stored in a lireddit2 postgres database. I graphql for backend queries, and React + middleware libraries for the frontend. Here's the end result: 
+                <div style="display: flex; justify-content:center;"><img width="600px" src="./images/homepage.png" /></div>
+                `]
+            }
+        ],
+        conclusion: {
+            title: "Conclusion",
+            description: `Bluedit was my start in frontend engineering. It's a comprehensive app that really challenged me as a newbie coder.`
+        }
+    }
+    ],
 ]);
 
 let fillCaseStudy = (project) => {
@@ -169,7 +222,7 @@ let fillCaseStudy = (project) => {
                 <p>🕹️ Tech Stack </p>
                 <p class="li-bold">${(info.technologies) ? info.technologies : ''}</p>
                 <p>🔗 See Result</p>
-                <a target="_blank" rel="noopener noreferrer" href=${(info.technologies) ? info.technologies : ''} class="li-bold">${(info.link) ? info.link : ''}</a>
+                <a target="_blank" rel="noopener noreferrer" href=${(info.link) ? info.link : ''} class="li-bold">${(info.link) ? info.link : ''}</a>
             </div>
         </div>
         <div class="case-background">
