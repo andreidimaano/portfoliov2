@@ -194,7 +194,7 @@ a {
 }
 
 .bluedit:hover {
-    background: url('https://media.giphy.com/media/uWURQ6w1rTMZzGfjLF/giphy.gif');
+    background-image: url('https://media.giphy.com/media/uWURQ6w1rTMZzGfjLF/giphy.gif');
 }
 
 .project-photo {
