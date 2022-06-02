@@ -158,6 +158,12 @@ a {
 .project-type {
     font-size: 1rem;
 }
+.scroll {
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    color: var(--black);
+}
 
 .bts {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://media.giphy.com/media/egY5YoS7dY0G47qsFx/giphy.gif');
