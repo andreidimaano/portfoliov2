@@ -22,6 +22,16 @@ h1, h2, h3 {
     color: black;
 }
 
+h1 {
+    font-weight: 700;
+    font-family: 'Manrope', 'sans-serif';
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* body::-webkit-scrollbar {
     display: none;
 } */
@@ -29,7 +39,11 @@ h1, h2, h3 {
 .grid {
     display: grid;
     grid-template-columns: 1fr minmax(200px, 800px ) 1fr;
-    gap: 80px 32px;
+    gap: 24px 32px;
+}
+
+.navbar-wrapper {
+    padding: 0 24px;
 }
 
 .navbar {
@@ -39,7 +53,7 @@ h1, h2, h3 {
     align-items: center;
 }
 
-.navbar > * {
+.navbar > *:not(:last-child) {
     margin-right: 24px;
 }
 
@@ -59,20 +73,19 @@ h1, h2, h3 {
     color: var(--black);
 }
 
-h1 {
-    font-weight: 700;
-    font-family: 'Manrope', 'sans-serif';
-    color: black;
+.carousel {
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 24px;
+    overflow-x: scroll;
+    overscroll-behavior: contain;
 }
 
-a {
-    text-decoration: none;
-}
-
-.footer-content > a, .navbar > a {
-    color: var(--gray);
-    font-size: 16px;
-    text-decoration: underline;
+.carousel .item{
+    margin-right: 24px;
+    scroll-snap-align: start;
+    list-style: none;
 }
 
 .home-intro {
@@ -106,13 +119,11 @@ a {
     cursor: pointer;
 }
 
-
 .content > * {
     grid-column: 2 / span 1 ;
     margin-bottom: 16px;
     background-size: cover;
     background-position: center;
-    /* font-family: 'Times New Roman', Times, serif; */
     color: white;
 }
 
@@ -139,63 +150,62 @@ a {
     background-color: var(--blue);
 }
 
-.calcifer, .drumline, .archive, .bts {
-    height: 500px;
-    font-size: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    word-wrap: break-word;
+
+.project-title {
+    font-size: 2rem;
 }
 
-.project-description {
-    padding: 16px;
-    background-color: white;
-}
-
-.project-description > p {
-    color: var(--gray);
+.project-type {
+    font-size: 1rem;
 }
 
 .bts {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://media.giphy.com/media/egY5YoS7dY0G47qsFx/giphy.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .calcifer {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/calciferbacon.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.project-photo {
-    text-align: center;
+.pokemon {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://media.giphy.com/media/4WFEIW3PXKD0ymdjVd/giphy.gif');
+}
+
+.bluedit {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://media.giphy.com/media/uWURQ6w1rTMZzGfjLF/giphy.gif');
 }
 
 .bts:hover {
     background-image: url('https://media.giphy.com/media/egY5YoS7dY0G47qsFx/giphy.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .calcifer:hover {
     background-image: url(../images/calcifer.gif);
 }
 
-.drumline {
-    background-image: url(../images/IMG_1559.JPG)
+.pokemon:hover {
+    background-image: url('https://media.giphy.com/media/4WFEIW3PXKD0ymdjVd/giphy.gif');
 }
 
-.drumline:hover {
-    background-image: url(https://media.giphy.com/media/F7HGLpsQ9kRTDOYvyn/giphy.gif)
+.bluedit:hover {
+    background: url('https://media.giphy.com/media/uWURQ6w1rTMZzGfjLF/giphy.gif');
 }
 
-.archive {
-    background-image: url(https://media.giphy.com/media/jyanYxvGz3MOc/giphy.gif);
+.project-photo {
+    text-align: center;
+    aspect-ratio: auto 4/5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    border-radius: 15px;
+    color: var(--white);
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
 }
 
 .footer {
@@ -212,4 +222,10 @@ a {
 
 .footer-content > * {
     margin-right: 10px;
+}
+
+.footer-content > a, .navbar > a {
+    color: var(--gray);
+    font-size: 16px;
+    text-decoration: underline;
 }
