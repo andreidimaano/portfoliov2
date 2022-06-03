@@ -1,5 +1,4 @@
 .profile {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -7,6 +6,8 @@
 .profile-text {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    font-size: calc((100vw - 64px) / 4);
+    margin: 0;
 }
 
 .about-intro-text {
@@ -186,9 +187,11 @@
 }
 
 .thankyou {
-    display: flex;
-    justify-content: center;
-    margin: 3rem 3rem 0 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: calc((100vw - 64px) / 10);
+    margin: 0;
+    text-overflow: nowrap;
 }
 .scream {
     grid-column: 2 / span 5;
